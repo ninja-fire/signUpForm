@@ -1,0 +1,175 @@
+/* CSS reset */
+*, *:before, *:after {
+    box-sizing: border-box
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none
+}
+
+footer, header, nav, section, main {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+/* CSS reset */
+
+/* CSS style */
+body {
+    background-color: #002559;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+h1 {
+    color: #002559;
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    padding: 0.5em 0.1em;
+    text-align: center;
+}
+
+input {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #002559;
+    display: block;
+    font-size: 1em;
+    margin-top: 1em;
+    outline: none !important;
+    padding: 0.6em 1em;
+    width: inherit;
+}
+
+p {
+    padding: 0.2em;
+}
+
+.styled {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #F8F8F8;
+    border: 2px solid #002559;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #002559;
+    display: block;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    outline: none !important;
+    padding: 0.6em 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 1em auto 0 auto;
+}
+
+.styled:hover {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: #002559;
+    color: #F8F8F8;
+}
+
+.styled:active {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: #002559;
+    color: #F8F8F8;
+    position:relative;
+    top:1px;
+}
+
+
+#form-container {
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: auto;
+    padding: 2em 4em;
+    width: 40%;
+}
+
+#blank-box {
+    padding: 3em;
+}
+
+/* CSS style */
+
+/* Media query */
+@media (max-width: 720px) {
+    body {
+        width: 100%;
+    }
+
+    #form-container {
+        padding: 2em 1em;
+        width: 80%;
+    }
+}
+/* Media query */
+
+/* Validation styles */
+input.valid {
+    border-color: #00c900;
+}
+
+input.invalid {
+    border-color: orange;
+}
+
+input + p {
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+}
+/* Validation styles */
